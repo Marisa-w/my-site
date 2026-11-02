@@ -27,6 +27,25 @@
   font-size: 0.9rem;
 }
 
+.quote-feature {
+  max-width: 34rem;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  color: #fff;
+  background: #c2410c;
+  border-radius: 12px;
+}
+
+.quote-feature blockquote {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+.quote-feature #random-author {
+  text-align: right;
+}
+
 img {
   max-width: 100%;
   height: auto;
