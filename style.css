@@ -4,3 +4,9 @@
   border-left: 3px solid #c2410c;
   background: #fff;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
