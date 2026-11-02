@@ -5,8 +5,31 @@
   background: #fff;
 }
 
+.quote {
+  max-width: 34rem;
+  margin: 1.5rem auto;
+  padding: 1.1rem 1.3rem;
+  background: #fff;
+  border: 1px solid #dcd8d0;
+  border-left: 4px solid #c2410c;
+  border-radius: 10px;
+}
+
+.quote blockquote {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.quote footer {
+  margin-top: 0.75rem;
+  color: #5f5b55;
+  font-size: 0.9rem;
+}
+
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
+
