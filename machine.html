@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Useless Machine | Learning HTML</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="site-nav"></div>
+  <main>
+    <h1>The Useless Machine</h1>
+    <p>Turn the switch on. The machine will turn it off again.</p>
+    <section class="machine" aria-labelledby="machine-title">
+      <h2 id="machine-title">Control panel</h2>
+      <button id="power-button" type="button" aria-pressed="false">Turn on</button>
+      <p id="machine-message" aria-live="polite">The machine is off.</p>
+    </section>
+  </main>
+  <script src="nav.js"></script>
+  <script src="machine.js"></script>
+</body>
+</html>
