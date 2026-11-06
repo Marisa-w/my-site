@@ -235,3 +235,53 @@ main li::before {
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
 }
+.gallery {
+  margin-top: 4.5rem;
+}
+
+.gallery > p {
+  color: var(--muted);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.gallery figure {
+  margin: 0;
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 0.85rem;
+}
+
+.gallery figure img {
+  display: block;
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+  transition: transform 240ms ease;
+}
+
+.gallery figure:hover img {
+  transform: scale(1.025);
+}
+
+.gallery figcaption {
+  padding: 0.8rem 1rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.image-credit {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 600px) {
+  .gallery-grid { grid-template-columns: 1fr; }
+  .gallery figure img { height: 16rem; }
+}
