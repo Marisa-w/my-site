@@ -10,11 +10,13 @@
   <div id="site-nav"></div>
   <main>
     <h1>The Useless Machine</h1>
-    <p>Turn the switch on. The machine will turn it off again.</p>
+    <p>How many times can you turn it on before it turns itself off? You have 10 seconds.</p>
     <section class="machine" aria-labelledby="machine-title">
-      <h2 id="machine-title">Control panel</h2>
-      <button id="power-button" type="button" aria-pressed="false">Turn on</button>
-      <p id="machine-message" aria-live="polite">The machine is off.</p>
+      <h2 id="machine-title">Switch challenge</h2>
+      <p class="game-score">Score: <output id="score">0</output></p>
+      <button id="power-button" type="button">Start game</button>
+      <p id="machine-message" aria-live="polite">Press start when you are ready.</p>
+      <p id="time-left">10 seconds</p>
     </section>
   </main>
   <script src="nav.js"></script>
